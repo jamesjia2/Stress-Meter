@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jamesjia2.com.gmail.stressmeter_james_jia.ResultsFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Summary of Results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textColor="#000000"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="311dp" />
+
+        <ScrollView
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="25dp">
+
+            <TableLayout
+                android:stretchColumns="0,1"
+                android:id="@+id/main_table"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true">
+            </TableLayout>
+
+        </ScrollView>
+
+        <lecho.lib.hellocharts.view.LineChartView
+            android:id="@+id/linechart"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:text="Stress Level Graph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:id="@+id/textView4"
+            android:textColor="#000000"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_alignEnd="@+id/textView3" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

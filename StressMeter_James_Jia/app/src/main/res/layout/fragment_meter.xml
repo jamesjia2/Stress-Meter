@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jamesjia2.com.gmail.stressmeter_james_jia.ResultsFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="MORE IMAGES"
+            android:layout_height="wrap_content"
+            android:id="@+id/more_images"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="400dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:id="@+id/textView"
+            android:text="Touch the image that best captures how stressed you feel right now."
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="0dp"
+            android:columnWidth="80dp"
+            android:numColumns="4"
+            android:verticalSpacing="0dp"
+            android:horizontalSpacing="0dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="21dp" />
+    </RelativeLayout>
+
+</FrameLayout>
